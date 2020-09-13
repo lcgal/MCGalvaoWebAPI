@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Owin.Security;
 
 namespace MCGalvaoWebAPI.Models
 {
@@ -12,7 +13,7 @@ namespace MCGalvaoWebAPI.Models
         public Guid Id { get; set; }
 
         [Display(Name = "Titulo")]
-        [Required(ErrorMessage ="Campo obrigatório"), StringLength(10)]
+        [Required(ErrorMessage ="Campo obrigatório"), StringLength(30)]
         public string Name { get; set; }
 
         [Display(Name = "Foto")]
@@ -27,6 +28,12 @@ namespace MCGalvaoWebAPI.Models
         [Required(ErrorMessage = "Campo obrigatório")]
         public int Nights { get; set; }
 
+        [Display(Name = "Texto")]
+        [Required(ErrorMessage = "Campo obrigatório")]
+        public string Texto { get; set; }
+
         public string Photo { get; set; }
+
+        public string Slug { get; set; }
     }
 }

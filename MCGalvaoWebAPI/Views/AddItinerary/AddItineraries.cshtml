@@ -1,5 +1,4 @@
 ﻿@model MCGalvaoWebAPI.Models.Itinerary
-
 @{
     ViewData["Title"] = "AddItineraries";
 }
@@ -14,7 +13,7 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-10">
                 <div class="form-group">
                     <label asp-for="PhotoFile" class="control-label"></label>
                     <div class="custom-file">
@@ -35,6 +34,11 @@
                 <span asp-validation-for="Nights" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <div>
+                    <textarea asp-for="Texto" id="textarea111"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
@@ -51,6 +55,15 @@
         $(".custom-file-input").on("change", function () {
             var fileName = $(this).val().split("\\").pop();
             $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        var ckeditor;
+        $(function () {
+            ckeditor = CKEDITOR.replace("textarea111");
         });
     </script>
 

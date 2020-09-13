@@ -41,7 +41,6 @@ D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\M
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.TagHelpers.output.cache
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.RazorCoreGenerate.cache
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -163,5 +162,14 @@ D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\t
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\AddItinerary\AddItineraries.cshtml.g.cs
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.dll
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Owin.dll
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\RichTextEditor.dll
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\ViewItineraries\ItineraryList.cshtml.g.cs
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.csproj.CoreCompileInputs.cache
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Slider\AddSliderImages.cshtml.g.cs

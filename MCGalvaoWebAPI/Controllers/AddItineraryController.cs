@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 
 namespace MCGalvaoWebAPI.Controllers
 {
@@ -44,6 +45,8 @@ namespace MCGalvaoWebAPI.Controllers
             itinerary.Id = id;
             string uniqueFileName = UploadedFile(itinerary);
             itinerary.Photo = uniqueFileName;
+
+
             if (ModelState.IsValid)
             {
                 using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Configuration.GetConnectionString("Work")))
@@ -51,22 +54,48 @@ namespace MCGalvaoWebAPI.Controllers
                     //TODO tryparse gameId to long before querying
                     try
                     {
-                        connection.Query<Itinerary>($"dbo.[AddItineraries] @id , @name , @photo , @days , @nights"
-                            , new { itinerary.Id, itinerary.Name, itinerary.Photo, itinerary.Days, itinerary.Nights });
+
+                        string slug = itinerary.Name;
+                        foreach (char c in System.IO.Path.GetInvalidFileNameChars())
+                        {
+                            slug = slug.Replace(c, '_');
+                        }
+                        itinerary.Slug = slug.Replace(' ', '_');
+
+                        List<string> lines = new List<string>();
+                        lines.Add("---");
+                        lines.Add($"title: {itinerary.Name}");
+                        lines.Add($"photo: {itinerary.Photo}");
+                        lines.Add("---");
+                        lines.Add("");
+                        lines.Add(itinerary.Texto);
+
+                        System.IO.File.WriteAllLines($@"D:\Repositorios Pessoais\MCGalvaoWebSite\src\pages\{itinerary.Slug}.md", lines.ToArray());
+
+                        connection.Query<Itinerary>($"dbo.[AddItineraries] @id , @name , @photo , @days , @nights, @texto, @slug"
+                            , new { itinerary.Id, itinerary.Name, itinerary.Photo, itinerary.Days, itinerary.Nights, itinerary.Texto, itinerary.Slug });
+
+
+                        var results = connection.QueryMultiple(@"
+                            select id,name,photo,days,nights,slug from Itineraries");
+
+                        var itineraries = results.Read<Itinerary>();
+
+                        string json = JsonConvert.SerializeObject(itineraries);
+
+                        System.IO.File.WriteAllText(@"D:\Repositorios Pessoais\MCGalvaoWebSite\src\testObjects\Destinos.json", json);
+
+
+
                     }
                     catch (Exception e)
                     {
                         var teste2 = e.Message;
                     }
                 }
-
-
             }
-
             return View();
         }
-
-
 
         private string UploadedFile(Itinerary model)
         {
@@ -85,9 +114,5 @@ namespace MCGalvaoWebAPI.Controllers
             }
             return uniqueFileName;
         }
-
-
-
-
     }
 }
