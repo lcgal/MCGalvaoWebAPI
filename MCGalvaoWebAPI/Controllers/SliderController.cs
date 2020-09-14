@@ -9,6 +9,7 @@ using MCGalvaoWebAPI.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 
 namespace MCGalvaoWebAPI.Controllers
 {
@@ -53,14 +54,14 @@ namespace MCGalvaoWebAPI.Controllers
                             , new { image.Id, image.Name, image.File, image.Url, image.Description});
 
 
-                        //var results = connection.QueryMultiple(@"
-                        //    select id,name,photo,days,nights,slug from Itineraries");
+                        var results = connection.QueryMultiple(@"
+                            select id,name,[file],url,description from SliderImages");
 
-                        //var itineraries = results.Read<Itinerary>();
+                        var images = results.Read<SliderImage>();
 
-                        //string json = JsonConvert.SerializeObject(itineraries);
+                        string json = JsonConvert.SerializeObject(images);
 
-                        //System.IO.File.WriteAllText(@"D:\Repositorios Pessoais\MCGalvaoWebSite\src\testObjects\Destinos.json", json);
+                        System.IO.File.WriteAllText(@"D:\Repositorios Pessoais\MCGalvaoWebSite\src\testObjects\SliderImages.json", json);
                     }
                     catch (Exception e)
                     {
