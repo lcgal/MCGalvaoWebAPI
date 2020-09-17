@@ -63,7 +63,7 @@ namespace MCGalvaoWebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("slider/image/{filename}")]
+        [Route("image/{filename}")]
         public IActionResult GetSliderImage(string filename)
         {
             string root = Configuration["ApiImagesFolder"];

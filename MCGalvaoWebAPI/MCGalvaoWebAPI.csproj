@@ -11,6 +11,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\148ca07e-d196-4185-916c-7ae58435ee31_seychelles_1.jpg" />
+    <Content Remove="wwwroot\images\1e50f60e-acac-4c0a-afb5-f4be5f3cbd6b_grecia_inverno_728x307.jpg" />
+    <Content Remove="wwwroot\images\27acf8c1-a4b6-4164-99a5-07d84d5c527d_seychelles_1.jpg" />
+    <Content Remove="wwwroot\images\45541300-ebfc-4c2a-90bc-96d982b2900e_seychelles_1.jpg" />
+    <Content Remove="wwwroot\images\5a22391c-9814-4615-ada4-74340e5cb345_seychelles_1.jpg" />
+    <Content Remove="wwwroot\images\67d2b6b7-a3a2-450f-8fd7-a2d1843b9f3e_expresso-canada_728x307.jpg" />
+    <Content Remove="wwwroot\images\70c91a5e-a35e-4da6-a539-27615609c6a3_turquia_aromatica_2_728x307.jpg" />
+    <Content Remove="wwwroot\images\9ad37441-b06e-4a46-864f-cab8d2738ef8_turquia_istambul_728x307.jpg" />
+    <Content Remove="wwwroot\images\b436a385-229e-4eed-bf67-728115afe749_seychelles_1.jpg" />
+    <Content Remove="wwwroot\images\cc382c9c-2ec7-4f16-a9c1-034e81261927_turquia_aromatica_2_728x307.jpg" />
+    <Content Remove="wwwroot\images\e664cc06-7fad-4c51-8cd3-dcfc1706f387_expresso-canada_728x307.jpg" />
+    <Content Remove="wwwroot\images\e93ca5c0-cf87-44ca-84c3-e01709d0ae2c_turquia_aromatica_2_728x307.jpg" />
+    <Content Remove="wwwroot\images\f8b58747-858f-4f90-973f-a8faa8b8bd72_turquia_istambul_728x307.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ckeditor-full" Version="4.14.1" />
     <PackageReference Include="Dapper" Version="2.0.35" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
@@ -37,7 +53,22 @@
   <ItemGroup>
     <Folder Include="Files\" />
     <Folder Include="Views\ItineraryList\" />
-    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\148ca07e-d196-4185-916c-7ae58435ee31_seychelles_1.jpg" />
+    <None Include="wwwroot\images\1e50f60e-acac-4c0a-afb5-f4be5f3cbd6b_grecia_inverno_728x307.jpg" />
+    <None Include="wwwroot\images\27acf8c1-a4b6-4164-99a5-07d84d5c527d_seychelles_1.jpg" />
+    <None Include="wwwroot\images\45541300-ebfc-4c2a-90bc-96d982b2900e_seychelles_1.jpg" />
+    <None Include="wwwroot\images\5a22391c-9814-4615-ada4-74340e5cb345_seychelles_1.jpg" />
+    <None Include="wwwroot\images\67d2b6b7-a3a2-450f-8fd7-a2d1843b9f3e_expresso-canada_728x307.jpg" />
+    <None Include="wwwroot\images\70c91a5e-a35e-4da6-a539-27615609c6a3_turquia_aromatica_2_728x307.jpg" />
+    <None Include="wwwroot\images\9ad37441-b06e-4a46-864f-cab8d2738ef8_turquia_istambul_728x307.jpg" />
+    <None Include="wwwroot\images\b436a385-229e-4eed-bf67-728115afe749_seychelles_1.jpg" />
+    <None Include="wwwroot\images\cc382c9c-2ec7-4f16-a9c1-034e81261927_turquia_aromatica_2_728x307.jpg" />
+    <None Include="wwwroot\images\e664cc06-7fad-4c51-8cd3-dcfc1706f387_expresso-canada_728x307.jpg" />
+    <None Include="wwwroot\images\e93ca5c0-cf87-44ca-84c3-e01709d0ae2c_turquia_aromatica_2_728x307.jpg" />
+    <None Include="wwwroot\images\f8b58747-858f-4f90-973f-a8faa8b8bd72_turquia_istambul_728x307.jpg" />
   </ItemGroup>
 
 

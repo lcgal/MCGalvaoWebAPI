@@ -11,7 +11,7 @@
 <div class="card-deck">
     @foreach (var itinerary in Model.Itineraries)
     {
-        var photoPath = "D:/Repositorios Pessoais/MCGalvaoWebSite/src/images/" + (itinerary.Photo ?? "noimage.jpg");
+        var photoPath = "~/images/" + (itinerary.Photo ?? "noimage.jpg");
         <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
             <div class="card-header">
                 <h3>@itinerary.Name</h3>
