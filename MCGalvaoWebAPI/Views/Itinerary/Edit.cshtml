@@ -1,0 +1,72 @@
+﻿@model MCGalvaoWebAPI.Models.Itinerary
+@{
+    ViewData["Title"] = "AddItineraries";
+}
+
+<h1>Adicionar destino</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6 mx-auto py-4">
+        <form enctype="multipart/form-data" asp-action="AddItineraries">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label asp-for="PhotoFile" class="control-label"></label>
+                    <div class="custom-file">
+                        <input asp-for="PhotoFile" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <span asp-validation-for="PhotoFile" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="Days" class="control-label"></label>
+                <input asp-for="Days" class="form-control" />
+                <span asp-validation-for="Days" class="text-danger"></span>
+            </div>
+            <div class="col-md-2">
+                <label asp-for="Nights" class="control-label"></label>
+                <input asp-for="Nights" class="form-control" />
+                <span asp-validation-for="Nights" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div>
+                    <textarea asp-for="Texto" id="textarea111"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Voltar</a>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        var ckeditor;
+        $(function () {
+            ckeditor = CKEDITOR.replace("textarea111");
+        });
+    </script>
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}

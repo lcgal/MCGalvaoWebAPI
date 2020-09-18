@@ -50,7 +50,6 @@ D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\M
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\MCGalvaoWebAPI.Views.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\MCGalvaoWebAPI.Views.pdb
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.Views.pdb
-D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Itineraries.cshtml.g.cs
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -161,7 +160,6 @@ D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\r
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\AddItinerary\AddItineraries.cshtml.g.cs
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.dll
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\Owin.dll
@@ -173,3 +171,6 @@ D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\bin\Debug\netcoreapp3.1\M
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.csproj.CoreCompileInputs.cache
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\MCGalvaoWebAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Slider\AddSliderImages.cshtml.g.cs
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Itinerary\Create.cshtml.g.cs
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Itinerary\Edit.cshtml.g.cs
+D:\Repositorios Pessoais\MCGalvaoWebAPI\MCGalvaoWebAPI\obj\Debug\netcoreapp3.1\Razor\Views\Itinerary\List.cshtml.g.cs

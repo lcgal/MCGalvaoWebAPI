@@ -11,6 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Files\**" />
+    <Content Remove="Files\**" />
+    <EmbeddedResource Remove="Files\**" />
+    <None Remove="Files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\images\148ca07e-d196-4185-916c-7ae58435ee31_seychelles_1.jpg" />
     <Content Remove="wwwroot\images\1e50f60e-acac-4c0a-afb5-f4be5f3cbd6b_grecia_inverno_728x307.jpg" />
     <Content Remove="wwwroot\images\27acf8c1-a4b6-4164-99a5-07d84d5c527d_seychelles_1.jpg" />
@@ -51,7 +58,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Files\" />
     <Folder Include="Views\ItineraryList\" />
   </ItemGroup>
 

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Dapper;
 using MCGalvaoWebAPI.Models;
 using MCGalvaoWebAPI.Models.Responses;
+using MCGalvaoWebAPI.Utils;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,27 +16,48 @@ using Newtonsoft.Json;
 
 namespace MCGalvaoWebAPI.Controllers
 {
-    public class AddItineraryController : Controller
+    public class ItineraryController : Controller
     {
         private readonly IWebHostEnvironment webHostEnvironment;
         private IConfiguration Configuration;
+        private readonly IDataRepository dataRepository;
 
-        public AddItineraryController (IWebHostEnvironment hostEnvironment, IConfiguration _configuration)
+        public ItineraryController (IWebHostEnvironment hostEnvironment, IConfiguration _configuration, IDataRepository _dataRepository)
         {
             webHostEnvironment = hostEnvironment;
             Configuration = _configuration;
+            dataRepository = _dataRepository;
         }
 
-        public IActionResult Index()
+        public IActionResult List()
+        {
+            //var itineraries = dataRepository.GetItineraries();
+
+            ItinerariesViewModel viewModel = new ItinerariesViewModel(dataRepository);
+
+            return View(viewModel);
+        }
+
+        public IActionResult Create()
         {
             return View();
         }
 
-
-        public IActionResult AddItineraries()
+        public IActionResult Edit(string id)
         {
-            return View();
+            Itinerary itinerary = null;
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Configuration.GetConnectionString("Work")))
+                {
+                    itinerary = connection.Query<Itinerary>($"select * from itineraries where id = @id", new { id }).FirstOrDefault();
+                }
+            }
+            return View(itinerary);
+
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
